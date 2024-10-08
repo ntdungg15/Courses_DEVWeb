@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META http-equiv='Content-Type' content="text/html" charset="UTF-8">
+    <link rel="stylesheet" href="style_tab.css">
+</head>
+
+<body>
+    <table cellpadding="5" cellspacing="2">
+        <tr>
+            <td id="m1" class="menu-nomal" onmouseover="javascript:MouseOver(this);"
+                onmouseout="javascript:MOut(this);" onclick="javascript:MC(this);">Baomoi</td>
+            <td id="m2" class="menu-nomal" onmouseover="javascript:MouseOver(this);"
+                onmouseout="javascript:MOut(this);" onclick="javascript:MC(this);">Dantri</td>
+            <td id="m3" class="menu-nomal" onmouseover="javascript:MouseOver(this);"
+                onmouseout="javascript:MOut(this);" onclick="javascript:MC(this);">ThanhNien</td>
+            <td id="m4" class="menu-nomal" onmouseover="javascript:MouseOver(this);"
+                onmouseout="javascript:MOut(this);" onclick="javascript:MC(this);">Zing</td>
+        </tr>
+    </table>
+    <hr>
+
+    <iframe id="myframe" src="https://baomoi.com" style="height:550px; width:100%;"></iframe>
+
+    <script type="text/javascript">
+        x = null; 
+
+        function MouseOver(r) {
+            if (r != x) r.className = "menu-CMouse";
+        }
+
+        function MOut(r) {
+            if (r != x) r.className = "menu-nomal";
+        }
+
+        function MC(r) {
+            if (x != null)  
+                x.className = "menu-nomal";
+
+            x = r; 
+            x.className = "menu-choosed";
+
+            frm = document.getElementById("myframe");
+            if (x.id == "m1") {
+                frm.src = "https://baomoi.com";
+            } else if (x.id == "m2") {
+                frm.src = "http://dantri.com.vn";
+            } else if (x.id == "m3") {
+                frm.src = "https://thanhnien.vn";
+            } else if (x.id == "m4") {
+                frm.src = "http://zing.vn";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.menu-nomal {
+    background-color: #cccccc;
+    border-left: solid 1px #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 0px #dddddd;
+}
+.menu-choosed {
+    background-color: #00ffff;
+    border-left: solid 1px #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 0px #dddddd;
+}
+.menu-CMouse {
+    background-color: #fcfcfc;
+    border-left: solid 1px #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 0px #dddddd;
+    cursor:pointer;
+}
